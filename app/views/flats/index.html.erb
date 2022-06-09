@@ -1,0 +1,11 @@
+<% @flats.each do |flat| %>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title"><%= "#{flat.name}" %></h5>
+      <p class="card-text"><%= "#{flat.description}" %></p>
+      <i class="fa-solid fa-user-group"></i>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+<% end %>
