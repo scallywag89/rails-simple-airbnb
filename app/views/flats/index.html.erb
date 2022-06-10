@@ -1,20 +1,28 @@
-<div class="d-flex">
-  <% @flats.each do |flat| %>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title"><%= "#{flat.name}" %></h5>
-        <p class="card-text"><%= "#{flat.description}" %></p>
-        <div class="d-flex">
-          <div class="d-flex">
-          </div>
-            <i class="material-icons me-2">people</i>
-            <span><%= "#{flat.number_of_guests}" %></span>
-          <div class="d-flex">
-            <i class="material-icons me-2">euro_symbol</i>
-            <span><%= "#{flat.price_per_night}" %></span>
+<div class="container mt-3">
+  <div class="row">
+  </div>
+  <div class="row">
+  </div>
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title"><%= "#{flat.name}" %></h5>
+            <p class="card-text"><%= "#{flat.description}" %></p>
+            <div class="d-flex">
+              <div class="d-flex">
+              </div>
+                <i class="material-icons me-2">people</i>
+                <span><%= "#{flat.number_of_guests}" %></span>
+              <div class="d-flex">
+                <i class="material-icons me-2">euro_symbol</i>
+                <span><%= "#{flat.price_per_night}" %></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
